@@ -12,7 +12,8 @@ const getComputerChoice = () => {
 const playSingleRound = (playerSelection, computerSelection) => {
 
     
-    playerSelection = prompt("What is your choice?").toLowerCase();
+    playerSelection = prompt("What is your choice?");
+    playerSelection = playerSelection.toLowerCase();
     computerSelection = getComputerChoice();
      
     switch(true) {
@@ -54,9 +55,5 @@ const game = () => {
     }
 }
     
-
-
-
-
 game();
 
