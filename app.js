@@ -29,9 +29,14 @@ const playSingleRound = (playerSelection, computerSelection) => {
         default:
             return "an error has ocurred";
     
-
     }
-
 }
 
 // console.log(playSingleRound(playerSelection, computerSelection));
+
+for (let i = 0; i < 5; i++) {
+    playSingleRound(playerSelection, computerSelection);
+    console.log(playSingleRound(playerSelection, computerSelection))
+}
+
+console.log(playSingleRound());
